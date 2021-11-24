@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: 'lts/fermium'
       - run: npm --prefix ./app install --no-save prettier
+      - run: npm --prefix ./app run check-format
       - if: ${{ failure() }}
         run: echo "::warning ::prettier check failed"
       - if: ${{ cancelled() }}
