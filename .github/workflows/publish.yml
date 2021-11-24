@@ -8,7 +8,6 @@ on:
 jobs:
   prettier:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -16,22 +15,13 @@ jobs:
           node-version: 'lts/fermium'
       - run: npm --prefix ./app install --no-save prettier
       - run: npm --prefix ./app run check-format
-      - if: ${{ failure() }}
-        run: echo "::warning ::prettier check failed"
-      - if: ${{ cancelled() }}
-        run: echo "::warning ::prettier check cancelled"
   
-  # check-style:
-  #   runs-on: ubuntu-latest
-  #   continue-on-error: true
-  #   outputs:
-  #     output1: ${{ steps.step1.outputs.prettier }}
-  #     output2: ${{ steps.step2.outputs.eslint }}
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 'lts/fermium'
-  #     - run: npm --prefix ./app install --no-save prettier eslint eslint-config-airbnb-base eslint-plugin-import
-  #     - run: npm --prefix ./app run check-format
-  #     - run: npm --prefix ./app run lint
+  check-style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+      - run: npm --prefix ./app install --no-save eslint eslint-config-airbnb-base eslint-plugin-import
+      - run: npm --prefix ./app run lint
