@@ -1,0 +1,29 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "check-format": "prettier --check ./to_check/*",
+    "lint": "eslint ./to_check/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonza7aav/sandbox.git"
+  },
+  "keywords": [],
+  "author": "Aguirre Gonzalo Adolfo <gonza.a.aguirre@gmail.com> (https://github.com/gonza7aav)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gonza7aav/sandbox/issues"
+  },
+  "homepage": "https://github.com/gonza7aav/sandbox#readme",
+  "dependencies": {
+    "prettier": "2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "8.3.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.3"
+  }
+}

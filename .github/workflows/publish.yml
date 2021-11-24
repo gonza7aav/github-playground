@@ -1,0 +1,18 @@
+name: Check style
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/fermium'
+      - run: npm --prefix ./app install --no-save prettier eslint eslint-config-airbnb-base eslint-plugin-import
+      - run: npm --prefix ./app run check-format
+      - run: npm --prefix ./app run lint
