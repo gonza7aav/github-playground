@@ -1,4 +1,4 @@
-# sandbox
+# github-playground
 
 [English](README.en.md)
 
@@ -6,7 +6,7 @@
 >
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eos officia repellat nostrum, illo repellendus! Nesciunt doloribus architecto excepturi quasi, reprehenderit omnis modi veritatis quisquam obcaecati, blanditiis atque cupiditate eos. [^1]
 
-el lugar donde pruebo cosas de git y github
+El lugar donde voy probando cosas de _Git_ y _GitHub_.
 
 - [Tabla de contenidos](TableOfContents.md)
 

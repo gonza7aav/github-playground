@@ -1,7 +1,7 @@
-# sandbox
+# github-playground
 
 [Español](README.es.md)
 
-the place where I test things on git & github
+The place where I will test things about _Git_ & _GitHub_.
 
 - [Table of Contents](TableOfContents.md)
