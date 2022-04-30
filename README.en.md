@@ -6,4 +6,4 @@ The place where I will test things about _Git_ & _GitHub_.
 
 - [Table of Contents](TableOfContents.md)
 
-This was add by a PR squash1
+This was add by a PR squash
