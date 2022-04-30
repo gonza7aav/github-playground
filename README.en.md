@@ -8,4 +8,4 @@ The place where I will test things about _Git_ & _GitHub_.
 
 This was add by a PR merge
 This was add by a PR squash
-This was add by a PR rebase1
+this was add by a PR rebase
